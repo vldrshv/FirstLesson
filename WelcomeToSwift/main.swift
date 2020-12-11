@@ -49,7 +49,7 @@ case .none: print("Server ничего не вернул")
 case let .some(value): print(value)
 }
 
-
+zczczcvcvx
 
 
 
