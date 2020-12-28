@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		797582702583D3640049A1AC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7975826F2583D3640049A1AC /* main.swift */; };
+		F5DFE6F9259A002D00D7EE96 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DFE6F8259A002D00D7EE96 /* Car.swift */; };
+		F5DFE6FC259A009000D7EE96 /* VehicleAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DFE6FB259A009000D7EE96 /* VehicleAction.swift */; };
+		F5DFE6FF259A00DA00D7EE96 /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DFE6FE259A00DA00D7EE96 /* CarModel.swift */; };
+		F5DFE702259A015800D7EE96 /* SportCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DFE701259A015800D7EE96 /* SportCar.swift */; };
+		F5DFE705259A017200D7EE96 /* TrunkCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DFE704259A017200D7EE96 /* TrunkCar.swift */; };
+		F5DFE70A259A145A00D7EE96 /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DFE709259A145A00D7EE96 /* Print.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,12 @@
 /* Begin PBXFileReference section */
 		7975826C2583D3640049A1AC /* WelcomeToSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WelcomeToSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		7975826F2583D3640049A1AC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F5DFE6F8259A002D00D7EE96 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		F5DFE6FB259A009000D7EE96 /* VehicleAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleAction.swift; sourceTree = "<group>"; };
+		F5DFE6FE259A00DA00D7EE96 /* CarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
+		F5DFE701259A015800D7EE96 /* SportCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportCar.swift; sourceTree = "<group>"; };
+		F5DFE704259A017200D7EE96 /* TrunkCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrunkCar.swift; sourceTree = "<group>"; };
+		F5DFE709259A145A00D7EE96 /* Print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Print.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,12 @@
 			isa = PBXGroup;
 			children = (
 				7975826F2583D3640049A1AC /* main.swift */,
+				F5DFE6F8259A002D00D7EE96 /* Car.swift */,
+				F5DFE6FB259A009000D7EE96 /* VehicleAction.swift */,
+				F5DFE6FE259A00DA00D7EE96 /* CarModel.swift */,
+				F5DFE701259A015800D7EE96 /* SportCar.swift */,
+				F5DFE704259A017200D7EE96 /* TrunkCar.swift */,
+				F5DFE709259A145A00D7EE96 /* Print.swift */,
 			);
 			path = WelcomeToSwift;
 			sourceTree = "<group>";
@@ -119,7 +137,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5DFE6FF259A00DA00D7EE96 /* CarModel.swift in Sources */,
+				F5DFE702259A015800D7EE96 /* SportCar.swift in Sources */,
+				F5DFE70A259A145A00D7EE96 /* Print.swift in Sources */,
+				F5DFE6FC259A009000D7EE96 /* VehicleAction.swift in Sources */,
+				F5DFE6F9259A002D00D7EE96 /* Car.swift in Sources */,
 				797582702583D3640049A1AC /* main.swift in Sources */,
+				F5DFE705259A017200D7EE96 /* TrunkCar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,7 +269,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 379294YDPQ;
+				DEVELOPMENT_TEAM = K7LNSMSNQ4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -256,7 +280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 379294YDPQ;
+				DEVELOPMENT_TEAM = K7LNSMSNQ4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

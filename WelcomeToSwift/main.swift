@@ -8,48 +8,20 @@
 import Foundation
 
 
-let employList: [String] = [
-    "Геннадий Новиков",
-    "Давид С",
-    "Давид С",
-]
+var mazda = SportCar(model: .mazda, creationYear: "2009", horsePower: 600.0)
+var toyota = TrunkCar(model: .toyota, creationYear: "2020", volume: 20.0, extraVolume: 10.0)
 
-print(employList)
-
-let employListSet: Set<String> = [
-    "Геннадий Новиков",
-    "Давид С",
-    "Давид С"
-]
-
-print(employListSet)
+mazda.interact(action: .openWindow)
+mazda.interact(action: .gearOn)
+mazda.interact(action: .gearOff)
+mazda.interact(action: .popVolume, withValue: 14)
+mazda.interact(action: .pushVolume, withValue: 10)
+mazda.interact(action: .increaseCapacity, withValue: 10)
 
 
-let isSergeyInList = employList.contains("Давид С")
-
-print(isSergeyInList)
-
-
-
-var r: Double? = .none //server закончил работу с ошибкой
-
-
-
-if let value = r {
-    print(value)
-} else {
-    print("Server ничего не вернул")
-}
-
-let result = r ?? 0
-
-
-switch r {
-case .none: print("Server ничего не вернул")
-case let .some(value): print(value)
-}
-
-
-
-
-
+toyota.interact(action: .pushVolume, withValue: 10)
+toyota.interact(action: .pushVolume, withValue: 10)
+toyota.interact(action: .increaseCapacity)
+toyota.interact(action: .pushVolume, withValue: 10)
+toyota.interact(action: .popVolume, withValue: 14)
+toyota.interact(action: .decreaseCapacity)
