@@ -10,11 +10,27 @@ import Foundation
 
 class TrunkCar : Car {
     
+    private var volume: Double = 0.0
+    private var filledVolume: Double = 0.0 {
+        didSet {
+            if filledVolume > volume {
+                print(":can't load \(filledVolume - volume) units")
+                filledVolume = volume
+                return
+            }
+            if filledVolume < 0 {
+                print(":can't upload \(-filledVolume) units")
+                filledVolume = 0.0
+                return
+            }
+        }
+    }
     private var hasExtraVolume: Bool = false
     private var extraVolume: Double = 0.0
     
     init(model: CarModel, creationYear: String, volume: Double, extraVolume: Double?) {
-        super.init(model, creationYear, volume)
+        super.init("Trunk Car", model, creationYear)
+        self.volume = volume
         self.extraVolume = extraVolume ?? 0.0
         self.hasExtraVolume = extraVolume != nil
     }
@@ -31,8 +47,7 @@ class TrunkCar : Car {
     }
 
     override func interact(action: VehicleAction, withValue: Double = 0) {
-        print("-- interact \(action) withValue = \(withValue)")
-        
+        super.interact(action: action, withValue: withValue)
         switch action {
         case .openWindow:
             areWindowOpened = true
@@ -52,7 +67,7 @@ class TrunkCar : Car {
             decreaseCapacity()
         }
         
-        print("\(self)\n\n")
+        print("\(self.type):\n\(self)\n\n")
     }
     
 }

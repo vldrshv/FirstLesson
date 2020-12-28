@@ -7,16 +7,16 @@
 
 import Foundation
 
-class SportCar: Car {
+class SportCar : Car {
     private var horsePower: Double = 0.0
     
     init(model: CarModel, creationYear: String, horsePower: Double) {
-        super.init(model, creationYear, 0.0)
+        super.init("Sport Car", model, creationYear)
         self.horsePower = horsePower
     }
     
     override func interact(action: VehicleAction, withValue: Double = 0) {
-        print("-- interact \(action) withValue = \(withValue)")
+        super.interact(action: action, withValue: withValue)
         
         switch action {
         case .openWindow:
@@ -30,6 +30,7 @@ class SportCar: Car {
         default:
             notAvailableAction(action)
         }
-        print("SportCar: \(Print.toString(reflectingObj: self))\n\n")
+        
+        print("\(self.type): \(Print.toString(reflectingObj: self))\n\n")
     }
 }
