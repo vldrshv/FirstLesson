@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		797582702583D3640049A1AC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7975826F2583D3640049A1AC /* main.swift */; };
+		F53100F425A7074A008344AC /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53100F325A7074A008344AC /* Queue.swift */; };
+		F53100F725A70D96008344AC /* Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53100F625A70D96008344AC /* Dequeue.swift */; };
+		F59A792A25A72595002B24DD /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A792925A72595002B24DD /* Print.swift */; };
+		F59A792D25A72933002B24DD /* DequeueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A792C25A72933002B24DD /* DequeueProtocol.swift */; };
+		F59A793025A7296B002B24DD /* QueueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A792F25A7296B002B24DD /* QueueProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,11 @@
 /* Begin PBXFileReference section */
 		7975826C2583D3640049A1AC /* WelcomeToSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WelcomeToSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		7975826F2583D3640049A1AC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F53100F325A7074A008344AC /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		F53100F625A70D96008344AC /* Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dequeue.swift; sourceTree = "<group>"; };
+		F59A792925A72595002B24DD /* Print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Print.swift; sourceTree = "<group>"; };
+		F59A792C25A72933002B24DD /* DequeueProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeueProtocol.swift; sourceTree = "<group>"; };
+		F59A792F25A7296B002B24DD /* QueueProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,11 @@
 			isa = PBXGroup;
 			children = (
 				7975826F2583D3640049A1AC /* main.swift */,
+				F53100F325A7074A008344AC /* Queue.swift */,
+				F59A792F25A7296B002B24DD /* QueueProtocol.swift */,
+				F53100F625A70D96008344AC /* Dequeue.swift */,
+				F59A792C25A72933002B24DD /* DequeueProtocol.swift */,
+				F59A792925A72595002B24DD /* Print.swift */,
 			);
 			path = WelcomeToSwift;
 			sourceTree = "<group>";
@@ -119,7 +134,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F53100F725A70D96008344AC /* Dequeue.swift in Sources */,
+				F59A793025A7296B002B24DD /* QueueProtocol.swift in Sources */,
+				F59A792D25A72933002B24DD /* DequeueProtocol.swift in Sources */,
 				797582702583D3640049A1AC /* main.swift in Sources */,
+				F53100F425A7074A008344AC /* Queue.swift in Sources */,
+				F59A792A25A72595002B24DD /* Print.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,7 +265,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 379294YDPQ;
+				DEVELOPMENT_TEAM = K7LNSMSNQ4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -256,7 +276,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 379294YDPQ;
+				DEVELOPMENT_TEAM = K7LNSMSNQ4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

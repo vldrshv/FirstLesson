@@ -8,48 +8,35 @@
 import Foundation
 
 
-let employList: [String] = [
-    "Геннадий Новиков",
-    "Давид С",
-    "Давид С",
-]
+//let queue = Queue<Int>()
+//queue.offer(10)
+//queue.offer(11)
+//queue.offer(12)
+//queue.offer(13)
+//queue.offer(14)
+//
+//print(queue)
 
-print(employList)
+let dequeue = Dequeue<Int>()
+dequeue.addFirst(1)
+dequeue.addFirst(2)
+dequeue.addFirst(3)
+dequeue.addFirst(4)
+dequeue.addFirst(5)
+print(dequeue)
+let last = dequeue.getLast()
+print(last)
+print(dequeue)
+let lastPoll = dequeue.pollLast()
+print(lastPoll)
+print(dequeue)
+let firstPoll = dequeue.pollFirst()
+print(firstPoll)
+print(dequeue)
 
-let employListSet: Set<String> = [
-    "Геннадий Новиков",
-    "Давид С",
-    "Давид С"
-]
-
-print(employListSet)
-
-
-let isSergeyInList = employList.contains("Давид С")
-
-print(isSergeyInList)
-
-
-
-var r: Double? = .none //server закончил работу с ошибкой
-
-
-
-if let value = r {
-    print(value)
-} else {
-    print("Server ничего не вернул")
-}
-
-let result = r ?? 0
-
-
-switch r {
-case .none: print("Server ничего не вернул")
-case let .some(value): print(value)
-}
-
-
-
-
-
+let oddQueue = dequeue.filter { $0 % 2 != 0}
+print(oddQueue)
+let polled = oddQueue.poll()
+print(polled)
+let polled2 = oddQueue.poll()
+print(polled2) // nil
